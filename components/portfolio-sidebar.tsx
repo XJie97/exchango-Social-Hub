@@ -9,16 +9,11 @@ interface PortfolioSidebarProps {
 }
 
 const navItems = [
-  "Problem Framing",
-  "User Research",
-  "Key User Tasks",
-  "Iteration & Evolution",
-  "User Flows & Wireframes",
-  "AI Feature: Matchmaker",
-  "Design Rationale",
-  "Service Ecosystem",
-  "Interactive Prototype",
-  "Reflection",
+  "Service Overview",
+  "Design Iteration",
+  "End-to-End Flow",
+  "Ecosystem Integration",
+  "AI Reflection",
 ]
 
 export function PortfolioSidebar({ activeSection, onSectionChange }: PortfolioSidebarProps) {
