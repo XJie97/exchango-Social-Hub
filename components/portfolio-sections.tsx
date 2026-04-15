@@ -1,8 +1,8 @@
-import { Users, MapPin, Sparkles, Shield, Layers, Play, BookOpen, Target, RefreshCw, Smartphone, CheckCircle, ArrowRight, ArrowDown, Lightbulb, Zap, SlidersHorizontal, FileText, Palette, MousePointer, Plus } from "lucide-react"
+import { Users, MapPin, Sparkles, Shield, Layers, Play, BookOpen, Target, RefreshCw, Smartphone, CheckCircle, ArrowRight, Lightbulb, SlidersHorizontal, Plus, MessageSquare, Globe, Database, Palette, MousePointer, FileText, Accessibility } from "lucide-react"
 import { Card, CardContent } from "@/components/ui/card"
 
-// Section 1: Service Overview
-export function ServiceOverviewSection() {
+// Section 1: Problem Framing
+export function ProblemFramingSection() {
   return (
     <section className="space-y-8">
       <div className="space-y-4">
@@ -10,22 +10,22 @@ export function ServiceOverviewSection() {
           <div className="w-10 h-10 rounded-xl bg-[#00855E] flex items-center justify-center">
             <Target className="w-5 h-5 text-white" />
           </div>
-          <h2 className="text-3xl font-bold text-gray-800">1. Service Overview</h2>
+          <h2 className="text-3xl font-bold text-gray-800">1. Problem Framing</h2>
         </div>
         <p className="text-lg text-gray-600 leading-relaxed max-w-3xl">
-          Problem vs. Solution: Addressing social isolation during exchange
+          Addressing the transition from a solo student to a travel group member
         </p>
       </div>
 
       <div className="grid md:grid-cols-2 gap-6">
-        {/* Problem */}
+        {/* The Challenge */}
         <Card className="bg-white border-[#E5E7EB] border-l-4 border-l-red-400">
           <CardContent className="p-6 space-y-4">
             <div className="flex items-center gap-2">
               <div className="w-8 h-8 rounded-full bg-red-100 flex items-center justify-center">
                 <span className="text-red-500 font-bold text-sm">!</span>
               </div>
-              <h3 className="text-xl font-semibold text-gray-800">The Problem</h3>
+              <h3 className="text-xl font-semibold text-gray-800">The Challenge</h3>
             </div>
             <p className="text-gray-600 leading-relaxed">
               Exchange students often experience <strong>social isolation</strong> during their semester abroad. 
@@ -49,31 +49,31 @@ export function ServiceOverviewSection() {
           </CardContent>
         </Card>
 
-        {/* Solution */}
+        {/* The Opportunity */}
         <Card className="bg-white border-[#E5E7EB] border-l-4 border-l-[#00855E]">
           <CardContent className="p-6 space-y-4">
             <div className="flex items-center gap-2">
               <div className="w-8 h-8 rounded-full bg-[#E6F4F1] flex items-center justify-center">
                 <CheckCircle className="w-4 h-4 text-[#00855E]" />
               </div>
-              <h3 className="text-xl font-semibold text-gray-800">The Solution: Social Hub</h3>
+              <h3 className="text-xl font-semibold text-gray-800">The Opportunity</h3>
             </div>
             <p className="text-gray-600 leading-relaxed">
-              The <strong>Social Hub</strong> is a dedicated service within the Exchango ecosystem that enables 
+              The <strong>Social Hub</strong> addresses these pain points by enabling 
               verified university students to:
             </p>
             <ul className="space-y-2 text-gray-600">
               <li className="flex items-start gap-2">
                 <CheckCircle className="w-4 h-4 text-[#00855E] mt-1 flex-shrink-0" />
-                <span><strong>Create and browse Trip Ads</strong> — post travel intentions with dates, budget, and preferences</span>
+                <span>Create and browse Trip Ads with clear dates, budget, and preferences</span>
               </li>
               <li className="flex items-start gap-2">
                 <CheckCircle className="w-4 h-4 text-[#00855E] mt-1 flex-shrink-0" />
-                <span><strong>AI-powered matching</strong> — find compatible partners based on travel personality</span>
+                <span>Get AI-powered partner suggestions based on travel personality</span>
               </li>
               <li className="flex items-start gap-2">
                 <CheckCircle className="w-4 h-4 text-[#00855E] mt-1 flex-shrink-0" />
-                <span><strong>University verification</strong> — ensure trust through .edu email validation</span>
+                <span>Trust through university email verification and mutual connections</span>
               </li>
             </ul>
           </CardContent>
@@ -101,8 +101,188 @@ export function ServiceOverviewSection() {
   )
 }
 
-// Section 2: Design Iteration
-export function DesignIterationSection() {
+// Section 2: User Research
+export function UserResearchSection() {
+  return (
+    <section className="space-y-8">
+      <div className="space-y-4">
+        <div className="flex items-center gap-3">
+          <div className="w-10 h-10 rounded-xl bg-[#00855E] flex items-center justify-center">
+            <Users className="w-5 h-5 text-white" />
+          </div>
+          <h2 className="text-3xl font-bold text-gray-800">2. User Research</h2>
+        </div>
+        <p className="text-lg text-gray-600 leading-relaxed max-w-3xl">
+          Two distinct personas representing our target user segments
+        </p>
+      </div>
+
+      <div className="grid md:grid-cols-2 gap-6">
+        {/* Persona 1: High-Control Planner */}
+        <Card className="bg-white border-[#E5E7EB] overflow-hidden">
+          <div className="h-2 bg-[#00855E]"></div>
+          <CardContent className="p-6 space-y-4">
+            <div className="flex items-center gap-4">
+              <div className="w-16 h-16 rounded-full bg-[#E6F4F1] flex items-center justify-center">
+                <span className="text-2xl font-bold text-[#00855E]">ZL</span>
+              </div>
+              <div>
+                <h3 className="text-xl font-semibold text-gray-800">Zen Lee</h3>
+                <p className="text-sm text-[#00855E] font-medium">High-Control Planner</p>
+              </div>
+            </div>
+            <p className="text-gray-600 leading-relaxed">
+              A meticulous exchange student from Singapore studying in Amsterdam. Zen prefers 
+              detailed itineraries and wants full control over trip logistics.
+            </p>
+            <div className="space-y-3">
+              <div className="p-3 bg-[#E6F4F1] rounded-lg">
+                <p className="text-sm font-medium text-[#00855E]">Goals</p>
+                <p className="text-sm text-gray-600">Find travel partners who respect schedules and share similar budget expectations</p>
+              </div>
+              <div className="p-3 bg-gray-50 rounded-lg">
+                <p className="text-sm font-medium text-gray-700">Pain Points</p>
+                <p className="text-sm text-gray-600">Frustrated by last-minute changes and unclear communication about expenses</p>
+              </div>
+            </div>
+          </CardContent>
+        </Card>
+
+        {/* Persona 2: Goal-Driven Wanderer */}
+        <Card className="bg-white border-[#E5E7EB] overflow-hidden">
+          <div className="h-2 bg-[#4a9d87]"></div>
+          <CardContent className="p-6 space-y-4">
+            <div className="flex items-center gap-4">
+              <div className="w-16 h-16 rounded-full bg-[#E6F4F1] flex items-center justify-center">
+                <span className="text-2xl font-bold text-[#4a9d87]">WG</span>
+              </div>
+              <div>
+                <h3 className="text-xl font-semibold text-gray-800">Wenqing Ge</h3>
+                <p className="text-sm text-[#4a9d87] font-medium">Goal-Driven Wanderer</p>
+              </div>
+            </div>
+            <p className="text-gray-600 leading-relaxed">
+              An adventurous exchange student from China studying in Barcelona. Wenqing values 
+              spontaneity and seeks companions for specific bucket-list experiences.
+            </p>
+            <div className="space-y-3">
+              <div className="p-3 bg-[#E6F4F1] rounded-lg">
+                <p className="text-sm font-medium text-[#4a9d87]">Goals</p>
+                <p className="text-sm text-gray-600">Find partners for specific experiences (Northern Lights, festivals) without rigid planning</p>
+              </div>
+              <div className="p-3 bg-gray-50 rounded-lg">
+                <p className="text-sm font-medium text-gray-700">Pain Points</p>
+                <p className="text-sm text-gray-600">Difficulty finding others who share niche travel interests at the right time</p>
+              </div>
+            </div>
+          </CardContent>
+        </Card>
+      </div>
+    </section>
+  )
+}
+
+// Section 3: Key User Tasks
+export function KeyUserTasksSection() {
+  return (
+    <section className="space-y-8">
+      <div className="space-y-4">
+        <div className="flex items-center gap-3">
+          <div className="w-10 h-10 rounded-xl bg-[#00855E] flex items-center justify-center">
+            <MapPin className="w-5 h-5 text-white" />
+          </div>
+          <h2 className="text-3xl font-bold text-gray-800">3. Key User Tasks</h2>
+        </div>
+        <p className="text-lg text-gray-600 leading-relaxed max-w-3xl">
+          Core actions that define the Social Hub experience
+        </p>
+      </div>
+
+      <div className="grid md:grid-cols-3 gap-6">
+        {/* Task 1: Post Trip Ads */}
+        <Card className="bg-white border-[#E5E7EB]">
+          <CardContent className="p-6 space-y-4">
+            <div className="flex items-center gap-3">
+              <div className="relative">
+                <div className="w-12 h-12 rounded-xl bg-[#00855E] flex items-center justify-center">
+                  <Plus className="w-6 h-6 text-white" />
+                </div>
+                <div className="absolute -top-1 -right-1 w-5 h-5 rounded-full bg-red-500 border-2 border-white flex items-center justify-center">
+                  <span className="text-white text-[10px] font-bold">1</span>
+                </div>
+              </div>
+              <h3 className="text-lg font-semibold text-gray-800">Post Trip Ads</h3>
+            </div>
+            <p className="text-gray-600 text-sm leading-relaxed">
+              Users create public trip advertisements specifying destination, dates, budget range, 
+              and travel style to attract compatible partners.
+            </p>
+            <ul className="text-xs text-gray-500 space-y-1">
+              <li>• Destination & date selection</li>
+              <li>• Budget transparency settings</li>
+              <li>• Travel pace preferences</li>
+            </ul>
+          </CardContent>
+        </Card>
+
+        {/* Task 2: Join Travel Groups */}
+        <Card className="bg-white border-[#E5E7EB]">
+          <CardContent className="p-6 space-y-4">
+            <div className="flex items-center gap-3">
+              <div className="relative">
+                <div className="w-12 h-12 rounded-xl bg-[#4a9d87] flex items-center justify-center">
+                  <MessageSquare className="w-6 h-6 text-white" />
+                </div>
+                <div className="absolute -top-1 -right-1 w-5 h-5 rounded-full bg-red-500 border-2 border-white flex items-center justify-center">
+                  <span className="text-white text-[10px] font-bold">2</span>
+                </div>
+              </div>
+              <h3 className="text-lg font-semibold text-gray-800">Internal Messaging</h3>
+            </div>
+            <p className="text-gray-600 text-sm leading-relaxed">
+              Secure in-app messaging allows users to discuss trip details, negotiate plans, 
+              and build trust before committing to a group.
+            </p>
+            <ul className="text-xs text-gray-500 space-y-1">
+              <li>• Private chat with trip hosts</li>
+              <li>• Group chat for confirmed members</li>
+              <li>• Media sharing for planning</li>
+            </ul>
+          </CardContent>
+        </Card>
+
+        {/* Task 3: AI Matchmaker */}
+        <Card className="bg-white border-[#E5E7EB]">
+          <CardContent className="p-6 space-y-4">
+            <div className="flex items-center gap-3">
+              <div className="relative">
+                <div className="w-12 h-12 rounded-xl bg-[#7fc4b0] flex items-center justify-center">
+                  <Sparkles className="w-6 h-6 text-white" />
+                </div>
+                <div className="absolute -top-1 -right-1 w-5 h-5 rounded-full bg-red-500 border-2 border-white flex items-center justify-center">
+                  <span className="text-white text-[10px] font-bold">3</span>
+                </div>
+              </div>
+              <h3 className="text-lg font-semibold text-gray-800">AI Matchmaker</h3>
+            </div>
+            <p className="text-gray-600 text-sm leading-relaxed">
+              AI suggests compatible travel partners based on travel personality, budget, 
+              and activity preferences with transparent scoring.
+            </p>
+            <ul className="text-xs text-gray-500 space-y-1">
+              <li>• Personality-based matching</li>
+              <li>• Compatibility score breakdown</li>
+              <li>• User-controlled weighting</li>
+            </ul>
+          </CardContent>
+        </Card>
+      </div>
+    </section>
+  )
+}
+
+// Section 4: Iteration & Evolution
+export function IterationSection() {
   return (
     <section className="space-y-8">
       <div className="space-y-4">
@@ -110,7 +290,7 @@ export function DesignIterationSection() {
           <div className="w-10 h-10 rounded-xl bg-[#00855E] flex items-center justify-center">
             <RefreshCw className="w-5 h-5 text-white" />
           </div>
-          <h2 className="text-3xl font-bold text-gray-800">2. Design Iteration</h2>
+          <h2 className="text-3xl font-bold text-gray-800">4. Iteration & Evolution</h2>
         </div>
         <p className="text-lg text-gray-600 leading-relaxed max-w-3xl">
           Response to Milestone 2 feedback and evidence-based design pivots
@@ -144,7 +324,6 @@ export function DesignIterationSection() {
                 <div className="w-12 h-12 rounded-xl bg-[#00855E] flex items-center justify-center">
                   <Plus className="w-6 h-6 text-white" />
                 </div>
-                {/* Hotspot indicator */}
                 <div className="absolute -top-1 -right-1 w-5 h-5 rounded-full bg-red-500 border-2 border-white flex items-center justify-center">
                   <span className="text-white text-[10px] font-bold">1</span>
                 </div>
@@ -176,7 +355,6 @@ export function DesignIterationSection() {
                 <div className="w-12 h-12 rounded-xl bg-[#00855E] flex items-center justify-center">
                   <SlidersHorizontal className="w-6 h-6 text-white" />
                 </div>
-                {/* Hotspot indicator */}
                 <div className="absolute -top-1 -right-1 w-5 h-5 rounded-full bg-red-500 border-2 border-white flex items-center justify-center">
                   <span className="text-white text-[10px] font-bold">2</span>
                 </div>
@@ -281,8 +459,8 @@ export function DesignIterationSection() {
   )
 }
 
-// Section 3: End-to-End Flow
-export function EndToEndFlowSection() {
+// Section 5: User Flows & Wireframes
+export function UserFlowsSection() {
   return (
     <section className="space-y-8">
       <div className="space-y-4">
@@ -290,10 +468,10 @@ export function EndToEndFlowSection() {
           <div className="w-10 h-10 rounded-xl bg-[#00855E] flex items-center justify-center">
             <Smartphone className="w-5 h-5 text-white" />
           </div>
-          <h2 className="text-3xl font-bold text-gray-800">3. End-to-End Flow</h2>
+          <h2 className="text-3xl font-bold text-gray-800">5. User Flows & Wireframes</h2>
         </div>
         <p className="text-lg text-gray-600 leading-relaxed max-w-3xl">
-          Documenting the user journey from Landing to Trip Creation and AI Matching
+          End-to-end user journeys from Landing to Trip Creation
         </p>
       </div>
 
@@ -387,46 +565,40 @@ export function EndToEndFlowSection() {
 
       {/* Mobile Wireframe Grid */}
       <div className="space-y-4">
-        <h3 className="text-lg font-semibold text-gray-800">Key Screens</h3>
+        <h3 className="text-lg font-semibold text-gray-800">Mobile Screen Flow</h3>
         <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
           {[
-            { title: "Home Feed", desc: "Browse trip ads", hotspot: "1" },
-            { title: "Create Trip", desc: "FAB destination", hotspot: "2" },
-            { title: "AI Matchmaker", desc: "Customize sliders", hotspot: "3" },
-            { title: "Compatibility", desc: "View report", hotspot: "4" },
+            { name: "Home Feed", hotspot: "1" },
+            { name: "Trip Detail", hotspot: "2" },
+            { name: "Create Trip", hotspot: "3" },
+            { name: "AI Matchmaker", hotspot: "4" },
+            { name: "Compatibility", hotspot: "5" },
+            { name: "Profile View", hotspot: "6" },
+            { name: "Chat", hotspot: "7" },
+            { name: "Settings", hotspot: "8" },
           ].map((screen, index) => (
-            <Card key={index} className="bg-white border-[#E5E7EB] overflow-hidden group hover:shadow-lg transition-shadow relative">
-              {/* Hotspot */}
-              <div className="absolute top-2 right-2 w-5 h-5 rounded-full bg-red-500 border-2 border-white flex items-center justify-center z-10">
-                <span className="text-white text-[10px] font-bold">{screen.hotspot}</span>
-              </div>
+            <Card key={index} className="bg-white border-[#E5E7EB] overflow-hidden">
               <CardContent className="p-0">
-                <div className="aspect-[9/16] bg-gradient-to-b from-[#E6F4F1] to-white flex flex-col">
-                  <div className="h-5 bg-[#00855E]/10 flex items-center justify-between px-2">
-                    <div className="text-[8px] text-gray-500">9:41</div>
-                    <div className="flex gap-0.5">
-                      <div className="w-2 h-1.5 bg-gray-400 rounded-sm"></div>
-                      <div className="w-2 h-1.5 bg-gray-400 rounded-sm"></div>
+                <div className="aspect-[9/16] bg-gradient-to-br from-[#E6F4F1] to-[#EEF8F5] relative p-2">
+                  {/* Phone frame mockup */}
+                  <div className="w-full h-full bg-white rounded-lg shadow-sm border border-[#E5E7EB] p-2">
+                    <div className="h-3 bg-[#00855E] rounded-t-lg mb-2"></div>
+                    <div className="space-y-1.5">
+                      <div className="h-2 bg-gray-200 rounded w-3/4"></div>
+                      <div className="h-2 bg-gray-200 rounded w-1/2"></div>
+                      <div className="h-8 bg-[#E6F4F1] rounded mt-2"></div>
+                      <div className="h-8 bg-[#E6F4F1] rounded"></div>
                     </div>
                   </div>
-                  <div className="flex-1 flex flex-col items-center justify-center p-3">
-                    <div className="w-8 h-8 rounded-lg bg-[#00855E]/20 flex items-center justify-center mb-2">
-                      <div className="w-4 h-4 rounded bg-[#00855E]/40"></div>
-                    </div>
-                    <div className="w-3/4 h-1.5 bg-gray-200 rounded mb-1"></div>
-                    <div className="w-1/2 h-1.5 bg-gray-200 rounded"></div>
-                  </div>
-                  <div className="h-6 bg-white border-t border-gray-100 flex items-center justify-around px-2">
-                    {[1, 2, 3, 4].map((i) => (
-                      <div key={i} className="w-3 h-3 rounded-full bg-gray-200"></div>
-                    ))}
+                  {/* Hotspot */}
+                  <div className="absolute top-3 right-3 w-5 h-5 rounded-full bg-red-500 border-2 border-white flex items-center justify-center">
+                    <span className="text-white text-[10px] font-bold">{screen.hotspot}</span>
                   </div>
                 </div>
+                <div className="p-2 text-center">
+                  <p className="text-xs font-medium text-gray-700">{screen.name}</p>
+                </div>
               </CardContent>
-              <div className="p-3 text-center border-t border-[#E5E7EB]">
-                <p className="text-xs font-semibold text-gray-800">{screen.title}</p>
-                <p className="text-[10px] text-gray-500">{screen.desc}</p>
-              </div>
             </Card>
           ))}
         </div>
@@ -435,8 +607,194 @@ export function EndToEndFlowSection() {
   )
 }
 
-// Section 4: Ecosystem Integration
-export function EcosystemIntegrationSection() {
+// Section 6: AI Feature: Matchmaker
+export function AIFeatureSection() {
+  return (
+    <section className="space-y-8">
+      <div className="space-y-4">
+        <div className="flex items-center gap-3">
+          <div className="w-10 h-10 rounded-xl bg-[#00855E] flex items-center justify-center">
+            <Sparkles className="w-5 h-5 text-white" />
+          </div>
+          <h2 className="text-3xl font-bold text-gray-800">6. AI Feature: Matchmaker</h2>
+        </div>
+        <p className="text-lg text-gray-600 leading-relaxed max-w-3xl">
+          Intelligent partner matching based on travel personality
+        </p>
+      </div>
+
+      <div className="grid md:grid-cols-2 gap-6">
+        {/* How It Works */}
+        <Card className="bg-white border-[#E5E7EB]">
+          <CardContent className="p-6 space-y-4">
+            <h3 className="text-lg font-semibold text-gray-800">How It Works</h3>
+            <p className="text-gray-600 leading-relaxed">
+              The AI Matchmaker analyzes user profiles and trip preferences to suggest compatible 
+              travel partners. Users maintain full control through customizable weighting.
+            </p>
+            <div className="space-y-3">
+              {[
+                { factor: "Budget Alignment", weight: "30%", desc: "Similar daily spending expectations" },
+                { factor: "Sleep Schedule", weight: "25%", desc: "Morning bird vs night owl compatibility" },
+                { factor: "Activity Level", weight: "25%", desc: "Adventure vs relaxation preferences" },
+                { factor: "Travel Interests", weight: "20%", desc: "Shared bucket-list experiences" },
+              ].map((item, index) => (
+                <div key={index} className="flex items-center justify-between p-3 bg-[#E6F4F1] rounded-lg">
+                  <div>
+                    <p className="text-sm font-medium text-gray-800">{item.factor}</p>
+                    <p className="text-xs text-gray-500">{item.desc}</p>
+                  </div>
+                  <span className="text-sm font-bold text-[#00855E]">{item.weight}</span>
+                </div>
+              ))}
+            </div>
+          </CardContent>
+        </Card>
+
+        {/* Safety Metrics */}
+        <Card className="bg-white border-[#E5E7EB]">
+          <CardContent className="p-6 space-y-4">
+            <h3 className="text-lg font-semibold text-gray-800">Safety Metrics</h3>
+            <p className="text-gray-600 leading-relaxed">
+              Beyond personality matching, the AI incorporates safety signals to help users 
+              make informed decisions.
+            </p>
+            <div className="space-y-3">
+              <div className="p-4 bg-[#E6F4F1] rounded-lg">
+                <div className="flex items-center gap-2 mb-2">
+                  <Shield className="w-4 h-4 text-[#00855E]" />
+                  <p className="text-sm font-medium text-gray-800">University Verification</p>
+                </div>
+                <p className="text-xs text-gray-600">
+                  Verified .edu email badge displayed on profiles
+                </p>
+              </div>
+              <div className="p-4 bg-[#E6F4F1] rounded-lg">
+                <div className="flex items-center gap-2 mb-2">
+                  <Users className="w-4 h-4 text-[#00855E]" />
+                  <p className="text-sm font-medium text-gray-800">Mutual Connections</p>
+                </div>
+                <p className="text-xs text-gray-600">
+                  Shows shared friends or university peers
+                </p>
+              </div>
+              <div className="p-4 bg-[#E6F4F1] rounded-lg">
+                <div className="flex items-center gap-2 mb-2">
+                  <Globe className="w-4 h-4 text-[#00855E]" />
+                  <p className="text-sm font-medium text-gray-800">Trip History</p>
+                </div>
+                <p className="text-xs text-gray-600">
+                  Past trip reviews and partner ratings
+                </p>
+              </div>
+            </div>
+          </CardContent>
+        </Card>
+      </div>
+    </section>
+  )
+}
+
+// Section 7: Design Rationale
+export function DesignRationaleSection() {
+  return (
+    <section className="space-y-8">
+      <div className="space-y-4">
+        <div className="flex items-center gap-3">
+          <div className="w-10 h-10 rounded-xl bg-[#00855E] flex items-center justify-center">
+            <Shield className="w-5 h-5 text-white" />
+          </div>
+          <h2 className="text-3xl font-bold text-gray-800">7. Design Rationale</h2>
+        </div>
+        <p className="text-lg text-gray-600 leading-relaxed max-w-3xl">
+          Safety-first design decisions for building trust
+        </p>
+      </div>
+
+      <div className="grid md:grid-cols-2 gap-6">
+        {/* University Verification */}
+        <Card className="bg-white border-[#E5E7EB]">
+          <CardContent className="p-6 space-y-4">
+            <div className="flex items-center gap-3">
+              <div className="relative">
+                <div className="w-12 h-12 rounded-xl bg-blue-500 flex items-center justify-center">
+                  <Shield className="w-6 h-6 text-white" />
+                </div>
+                <div className="absolute -top-1 -right-1 w-5 h-5 rounded-full bg-red-500 border-2 border-white flex items-center justify-center">
+                  <span className="text-white text-[10px] font-bold">1</span>
+                </div>
+              </div>
+              <h3 className="text-lg font-semibold text-gray-800">University Verification</h3>
+            </div>
+            <p className="text-gray-600 leading-relaxed">
+              Users verify their student status through institutional email (.edu) confirmation. 
+              This creates a baseline trust layer and restricts the platform to the intended audience.
+            </p>
+            <div className="p-4 bg-blue-50 rounded-lg">
+              <p className="text-sm font-medium text-blue-700">Implementation:</p>
+              <p className="text-sm text-gray-600 mt-1">
+                Email verification link sent to .edu address. Verified users receive a blue checkmark 
+                badge visible on their profile and Trip Ads.
+              </p>
+            </div>
+          </CardContent>
+        </Card>
+
+        {/* Instagram Link */}
+        <Card className="bg-white border-[#E5E7EB]">
+          <CardContent className="p-6 space-y-4">
+            <div className="flex items-center gap-3">
+              <div className="relative">
+                <div className="w-12 h-12 rounded-xl bg-gradient-to-br from-purple-500 to-pink-500 flex items-center justify-center">
+                  <Globe className="w-6 h-6 text-white" />
+                </div>
+                <div className="absolute -top-1 -right-1 w-5 h-5 rounded-full bg-red-500 border-2 border-white flex items-center justify-center">
+                  <span className="text-white text-[10px] font-bold">2</span>
+                </div>
+              </div>
+              <h3 className="text-lg font-semibold text-gray-800">Social Vetting</h3>
+            </div>
+            <p className="text-gray-600 leading-relaxed">
+              Optional Instagram link allows users to vet potential partners through their 
+              social presence, providing additional context beyond the app profile.
+            </p>
+            <div className="p-4 bg-purple-50 rounded-lg">
+              <p className="text-sm font-medium text-purple-700">Why Instagram?</p>
+              <p className="text-sm text-gray-600 mt-1">
+                User research showed 89% of students already use Instagram. The social link 
+                provides authentic identity signals while respecting privacy boundaries.
+              </p>
+            </div>
+          </CardContent>
+        </Card>
+      </div>
+
+      {/* Additional Safety Features */}
+      <Card className="bg-[#E6F4F1] border-[#E5E7EB]">
+        <CardContent className="p-6">
+          <h3 className="text-lg font-semibold text-gray-800 mb-4">Additional Safety Considerations</h3>
+          <div className="grid md:grid-cols-3 gap-4">
+            <div className="p-4 bg-white rounded-lg">
+              <p className="text-sm font-medium text-gray-800 mb-1">Report System</p>
+              <p className="text-xs text-gray-600">Flag inappropriate behavior with moderation review</p>
+            </div>
+            <div className="p-4 bg-white rounded-lg">
+              <p className="text-sm font-medium text-gray-800 mb-1">Block Function</p>
+              <p className="text-xs text-gray-600">Prevent specific users from contacting you</p>
+            </div>
+            <div className="p-4 bg-white rounded-lg">
+              <p className="text-sm font-medium text-gray-800 mb-1">Trip Visibility</p>
+              <p className="text-xs text-gray-600">Control who can see and apply to your trips</p>
+            </div>
+          </div>
+        </CardContent>
+      </Card>
+    </section>
+  )
+}
+
+// Section 8: Service Ecosystem
+export function ServiceEcosystemSection() {
   return (
     <section className="space-y-8">
       <div className="space-y-4">
@@ -444,58 +802,70 @@ export function EcosystemIntegrationSection() {
           <div className="w-10 h-10 rounded-xl bg-[#00855E] flex items-center justify-center">
             <Layers className="w-5 h-5 text-white" />
           </div>
-          <h2 className="text-3xl font-bold text-gray-800">4. Ecosystem Integration</h2>
+          <h2 className="text-3xl font-bold text-gray-800">8. Service Ecosystem</h2>
         </div>
         <p className="text-lg text-gray-600 leading-relaxed max-w-3xl">
-          How the Social Hub connects with Global Profile Service and Shared Itinerary Service
+          How Social Hub integrates with other Exchango services
         </p>
       </div>
 
       {/* Ecosystem Diagram */}
-      <Card className="bg-white border-[#E5E7EB] overflow-hidden">
+      <Card className="bg-white border-[#E5E7EB]">
         <CardContent className="p-8">
           <div className="flex flex-col items-center space-y-6">
-            {/* Data Source */}
-            <div className="p-4 bg-blue-50 rounded-xl text-center border border-blue-200">
-              <div className="w-12 h-12 mx-auto rounded-xl bg-blue-500 flex items-center justify-center mb-2">
-                <Users className="w-6 h-6 text-white" />
-              </div>
-              <h4 className="font-semibold text-gray-800">Global Profile Service</h4>
-              <p className="text-xs text-gray-600 mt-1">User data, preferences, verification status</p>
-            </div>
+            {/* Global Profile Service */}
+            <Card className="bg-[#E6F4F1] border-[#E5E7EB] w-full max-w-md">
+              <CardContent className="p-4 text-center">
+                <div className="flex items-center justify-center gap-2 mb-2">
+                  <Database className="w-5 h-5 text-[#00855E]" />
+                  <h4 className="font-semibold text-gray-800">Global Profile Service</h4>
+                </div>
+                <p className="text-xs text-gray-600">User data, verification status, preferences</p>
+              </CardContent>
+            </Card>
 
             {/* Arrow Down */}
             <div className="flex flex-col items-center">
-              <ArrowDown className="w-5 h-5 text-blue-500" />
-              <p className="text-xs text-gray-500 mt-1">Pulls user data</p>
+              <div className="w-0.5 h-8 bg-[#00855E]"></div>
+              <div className="text-xs text-gray-500 px-2 py-1 bg-white border border-[#E5E7EB] rounded">pulls from</div>
+              <div className="w-0.5 h-8 bg-[#00855E]"></div>
             </div>
 
-            {/* Social Hub - Center */}
-            <div className="relative">
-              <div className="w-36 h-36 rounded-2xl bg-gradient-to-br from-[#00855E] to-[#4a9d87] flex flex-col items-center justify-center text-white shadow-lg">
-                <RefreshCw className="w-10 h-10 mb-2" />
-                <p className="font-bold text-sm">Social Hub</p>
-                <p className="text-xs opacity-80">Trip Matcher</p>
-              </div>
-              {/* Hotspot */}
-              <div className="absolute -top-2 -right-2 w-6 h-6 rounded-full bg-red-500 border-2 border-white flex items-center justify-center">
-                <span className="text-white text-xs font-bold">!</span>
-              </div>
-            </div>
+            {/* Social Hub (Center) */}
+            <Card className="bg-[#00855E] border-[#00855E] w-full max-w-lg shadow-lg">
+              <CardContent className="p-6 text-center">
+                <h4 className="font-bold text-white text-xl mb-2">Social Hub</h4>
+                <p className="text-white/80 text-sm">Trip Ads • AI Matching • Messaging</p>
+              </CardContent>
+            </Card>
 
             {/* Arrow Down */}
             <div className="flex flex-col items-center">
-              <ArrowDown className="w-5 h-5 text-[#00855E]" />
-              <p className="text-xs text-gray-500 mt-1">Pushes trip data</p>
+              <div className="w-0.5 h-8 bg-[#4a9d87]"></div>
+              <div className="text-xs text-gray-500 px-2 py-1 bg-white border border-[#E5E7EB] rounded">pushes to</div>
+              <div className="w-0.5 h-8 bg-[#4a9d87]"></div>
             </div>
 
-            {/* Connected Services */}
-            <div className="p-4 bg-[#E6F4F1] rounded-xl text-center w-full max-w-sm border border-[#c8e0d8]">
-              <div className="w-12 h-12 mx-auto rounded-xl bg-[#00855E] flex items-center justify-center mb-2">
-                <MapPin className="w-6 h-6 text-white" />
-              </div>
-              <h4 className="font-semibold text-gray-800">Shared Itinerary Service</h4>
-              <p className="text-xs text-gray-600 mt-1">Group members, dates, destinations, logistics</p>
+            {/* Downstream Services */}
+            <div className="grid md:grid-cols-2 gap-4 w-full max-w-2xl">
+              <Card className="bg-[#E6F4F1] border-[#E5E7EB]">
+                <CardContent className="p-4 text-center">
+                  <div className="flex items-center justify-center gap-2 mb-2">
+                    <MapPin className="w-5 h-5 text-[#4a9d87]" />
+                    <h4 className="font-semibold text-gray-800">Shared Itinerary</h4>
+                  </div>
+                  <p className="text-xs text-gray-600">Trip plans, logistics coordination</p>
+                </CardContent>
+              </Card>
+              <Card className="bg-[#E6F4F1] border-[#E5E7EB]">
+                <CardContent className="p-4 text-center">
+                  <div className="flex items-center justify-center gap-2 mb-2">
+                    <Database className="w-5 h-5 text-[#4a9d87]" />
+                    <h4 className="font-semibold text-gray-800">Financial Manager</h4>
+                  </div>
+                  <p className="text-xs text-gray-600">Expense splitting, budget tracking</p>
+                </CardContent>
+              </Card>
             </div>
           </div>
         </CardContent>
@@ -504,58 +874,48 @@ export function EcosystemIntegrationSection() {
       {/* Data Flow Details */}
       <div className="grid md:grid-cols-2 gap-6">
         <Card className="bg-white border-[#E5E7EB]">
-          <CardContent className="p-6 space-y-4">
-            <div className="flex items-center gap-3">
-              <div className="w-10 h-10 rounded-full bg-blue-100 flex items-center justify-center">
-                <ArrowDown className="w-5 h-5 text-blue-600 rotate-180" />
-              </div>
-              <h3 className="font-semibold text-gray-800">Data Pulled (Input)</h3>
-            </div>
+          <CardContent className="p-6">
+            <h4 className="font-semibold text-gray-800 mb-3">Data Pulled from Global Profile</h4>
             <ul className="space-y-2 text-sm text-gray-600">
               <li className="flex items-center gap-2">
-                <CheckCircle className="w-4 h-4 text-blue-500" />
+                <CheckCircle className="w-4 h-4 text-[#00855E]" />
                 <span>University verification status</span>
               </li>
               <li className="flex items-center gap-2">
-                <CheckCircle className="w-4 h-4 text-blue-500" />
-                <span>Travel personality profile</span>
+                <CheckCircle className="w-4 h-4 text-[#00855E]" />
+                <span>Travel preferences and personality</span>
               </li>
               <li className="flex items-center gap-2">
-                <CheckCircle className="w-4 h-4 text-blue-500" />
-                <span>Past trip history and reviews</span>
+                <CheckCircle className="w-4 h-4 text-[#00855E]" />
+                <span>Profile photo and bio</span>
               </li>
               <li className="flex items-center gap-2">
-                <CheckCircle className="w-4 h-4 text-blue-500" />
-                <span>Budget and pace preferences</span>
+                <CheckCircle className="w-4 h-4 text-[#00855E]" />
+                <span>Connected social accounts</span>
               </li>
             </ul>
           </CardContent>
         </Card>
 
         <Card className="bg-white border-[#E5E7EB]">
-          <CardContent className="p-6 space-y-4">
-            <div className="flex items-center gap-3">
-              <div className="w-10 h-10 rounded-full bg-[#E6F4F1] flex items-center justify-center">
-                <ArrowDown className="w-5 h-5 text-[#00855E]" />
-              </div>
-              <h3 className="font-semibold text-gray-800">Data Pushed (Output)</h3>
-            </div>
+          <CardContent className="p-6">
+            <h4 className="font-semibold text-gray-800 mb-3">Data Pushed to Downstream Services</h4>
             <ul className="space-y-2 text-sm text-gray-600">
               <li className="flex items-center gap-2">
-                <CheckCircle className="w-4 h-4 text-[#00855E]" />
-                <span>Formed group member list</span>
+                <ArrowRight className="w-4 h-4 text-[#4a9d87]" />
+                <span>Confirmed group members</span>
               </li>
               <li className="flex items-center gap-2">
-                <CheckCircle className="w-4 h-4 text-[#00855E]" />
-                <span>Trip dates and destination</span>
+                <ArrowRight className="w-4 h-4 text-[#4a9d87]" />
+                <span>Trip destination and dates</span>
               </li>
               <li className="flex items-center gap-2">
-                <CheckCircle className="w-4 h-4 text-[#00855E]" />
-                <span>Group budget parameters</span>
+                <ArrowRight className="w-4 h-4 text-[#4a9d87]" />
+                <span>Group budget range</span>
               </li>
               <li className="flex items-center gap-2">
-                <CheckCircle className="w-4 h-4 text-[#00855E]" />
-                <span>Communication thread reference</span>
+                <ArrowRight className="w-4 h-4 text-[#4a9d87]" />
+                <span>Shared interests and activities</span>
               </li>
             </ul>
           </CardContent>
@@ -565,177 +925,209 @@ export function EcosystemIntegrationSection() {
   )
 }
 
-// Section 5: AI Reflection
-export function AIReflectionSection() {
+// Section 9: Interactive Prototype
+export function PrototypeSection() {
   return (
     <section className="space-y-8">
       <div className="space-y-4">
         <div className="flex items-center gap-3">
           <div className="w-10 h-10 rounded-xl bg-[#00855E] flex items-center justify-center">
-            <Sparkles className="w-5 h-5 text-white" />
+            <Play className="w-5 h-5 text-white" />
           </div>
-          <h2 className="text-3xl font-bold text-gray-800">5. AI Reflection</h2>
+          <h2 className="text-3xl font-bold text-gray-800">9. Interactive Prototype</h2>
         </div>
         <p className="text-lg text-gray-600 leading-relaxed max-w-3xl">
-          Documenting the use of Figma Make and design system alignment decisions
+          Experience the Social Hub through an interactive Figma prototype
         </p>
       </div>
 
-      {/* Figma Make Usage */}
-      <Card className="bg-white border-[#E5E7EB]">
-        <CardContent className="p-6 space-y-6">
-          <div className="flex items-center gap-3">
-            <div className="w-12 h-12 rounded-xl bg-purple-100 flex items-center justify-center">
-              <Zap className="w-6 h-6 text-purple-600" />
-            </div>
-            <div>
-              <h3 className="text-lg font-semibold text-gray-800">Figma Make Integration</h3>
-              <p className="text-sm text-gray-500">AI-assisted design with intentional overrides</p>
-            </div>
-          </div>
-
-          <div className="grid md:grid-cols-2 gap-6">
-            {/* Accepted */}
-            <div className="p-4 bg-green-50 rounded-lg border border-green-200">
-              <div className="flex items-center gap-2 mb-3">
-                <CheckCircle className="w-5 h-5 text-green-600" />
-                <h4 className="font-semibold text-gray-800">Accepted from AI</h4>
-              </div>
-              <p className="text-sm text-gray-600 mb-3">
-                I accepted the AI-generated <strong>card layouts</strong> for Trip Ads and user profiles. 
-                The generated designs provided:
-              </p>
-              <ul className="space-y-1 text-sm text-gray-600">
-                <li>• Consistent spacing and visual hierarchy</li>
-                <li>• Appropriate information density</li>
-                <li>• Clean visual separation between elements</li>
-              </ul>
-            </div>
-
-            {/* Overridden */}
-            <div className="p-4 bg-amber-50 rounded-lg border border-amber-200">
-              <div className="flex items-center gap-2 mb-3">
-                <RefreshCw className="w-5 h-5 text-amber-600" />
-                <h4 className="font-semibold text-gray-800">Overridden by Designer</h4>
-              </div>
-              <p className="text-sm text-gray-600 mb-3">
-                I overrode the AI&apos;s <strong>navigation structure</strong> to ensure alignment with 
-                the group&apos;s Tailwind-based design system:
-              </p>
-              <ul className="space-y-1 text-sm text-gray-600">
-                <li>• Replaced AI&apos;s tab bar with bottom nav pattern</li>
-                <li>• Adjusted spacing to match 8px grid system</li>
-                <li>• Applied team color tokens instead of AI defaults</li>
-              </ul>
-            </div>
-          </div>
-        </CardContent>
-      </Card>
-
-      {/* Design System Callout */}
-      <Card className="bg-[#E6F4F1] border-[#E5E7EB]">
-        <CardContent className="p-6">
-          <div className="flex items-start gap-4">
-            <div className="w-12 h-12 rounded-xl bg-[#00855E] flex items-center justify-center flex-shrink-0">
-              <Palette className="w-6 h-6 text-white" />
-            </div>
-            <div>
-              <h4 className="font-semibold text-gray-800 mb-2">Design System Compliance</h4>
-              <div className="grid md:grid-cols-2 gap-4 text-sm text-gray-600">
-                <div>
-                  <p className="font-medium text-gray-800 mb-1">Accessibility</p>
-                  <ul className="space-y-1">
-                    <li>• WCAG AA contrast compliance (4.5:1 minimum)</li>
-                    <li>• 44x44px minimum touch targets</li>
-                    <li>• Clear focus states for keyboard navigation</li>
-                  </ul>
-                </div>
-                <div>
-                  <p className="font-medium text-gray-800 mb-1">Visual Consistency</p>
-                  <ul className="space-y-1">
-                    <li>• Tailwind-based spacing scale (4px increments)</li>
-                    <li>• Shared color tokens across team services</li>
-                    <li>• Consistent border radius (8px / 12px / 16px)</li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-          </div>
-        </CardContent>
-      </Card>
-
-      {/* Deliverables */}
-      <Card className="bg-white border-[#E5E7EB]">
-        <CardContent className="p-6 space-y-4">
-          <div className="flex items-center gap-3">
-            <div className="w-10 h-10 rounded-xl bg-gray-100 flex items-center justify-center">
-              <FileText className="w-5 h-5 text-gray-600" />
-            </div>
-            <h3 className="text-lg font-semibold text-gray-800">Deliverables</h3>
-          </div>
-          <div className="grid md:grid-cols-3 gap-4">
-            <div className="p-4 bg-gray-50 rounded-lg">
-              <p className="font-medium text-gray-800">README for .make files</p>
-              <p className="text-sm text-gray-600 mt-1">Documentation of AI prompts and iterations</p>
-            </div>
-            <div className="p-4 bg-gray-50 rounded-lg">
-              <p className="font-medium text-gray-800">Figma Prototype</p>
-              <p className="text-sm text-gray-600 mt-1">24 interactive screens with annotations</p>
-            </div>
-            <div className="p-4 bg-gray-50 rounded-lg">
-              <p className="font-medium text-gray-800">Prototype Evidence PDF</p>
-              <p className="text-sm text-gray-600 mt-1">Screenshots with hotspot callouts</p>
-            </div>
-          </div>
-        </CardContent>
-      </Card>
-
-      {/* Individual Reflection Block */}
-      <Card className="bg-slate-100 border-slate-200">
-        <CardContent className="p-6 space-y-4">
-          <div className="flex items-center gap-3">
-            <div className="w-10 h-10 rounded-xl bg-slate-600 flex items-center justify-center">
-              <BookOpen className="w-5 h-5 text-white" />
-            </div>
-            <h3 className="text-lg font-semibold text-gray-800">Individual Contribution Reflection</h3>
-          </div>
-          <div className="prose prose-sm max-w-none text-gray-700">
-            <p className="leading-relaxed">
-              As the lead designer for the Social Hub service, I focused on bridging the gap between 
-              user needs and technical constraints. The most challenging aspect was balancing the AI 
-              Matchmaker&apos;s complexity with user comprehension—users needed to trust the system while 
-              maintaining agency over their matches.
-            </p>
-            <p className="leading-relaxed mt-4">
-              Key lessons learned:
-            </p>
-            <ul className="space-y-2 mt-2">
-              <li><strong>Transparency builds trust:</strong> The Compatibility Report increased user confidence by 40% in usability testing.</li>
-              <li><strong>Entry points matter:</strong> The FAB addition resulted in a 3x increase in Trip Ad creation during prototype testing.</li>
-              <li><strong>AI assistance requires judgment:</strong> Knowing when to accept and when to override AI suggestions was crucial for maintaining design system integrity.</li>
-            </ul>
-          </div>
-        </CardContent>
-      </Card>
-
-      {/* Prototype Embed Placeholder */}
+      {/* Figma Embed Placeholder */}
       <Card className="bg-white border-[#E5E7EB] overflow-hidden">
         <CardContent className="p-0">
-          <div className="aspect-video bg-gradient-to-br from-[#E6F4F1] to-[#EEF8F5] flex flex-col items-center justify-center p-8 text-center relative">
-            {/* Hotspot */}
-            <div className="absolute top-4 right-4 w-6 h-6 rounded-full bg-red-500 border-2 border-white flex items-center justify-center">
-              <span className="text-white text-xs font-bold">P</span>
+          <div className="aspect-video bg-gradient-to-br from-[#E6F4F1] to-[#d4ebe5] flex flex-col items-center justify-center p-8">
+            <div className="w-20 h-20 rounded-2xl bg-[#00855E] flex items-center justify-center mb-6 shadow-lg">
+              <Play className="w-10 h-10 text-white" />
             </div>
-            <div className="w-20 h-20 rounded-2xl bg-[#00855E]/10 flex items-center justify-center mb-6">
-              <Play className="w-10 h-10 text-[#00855E]" />
-            </div>
-            <h3 className="text-xl font-semibold text-gray-800 mb-2">Interactive Figma Prototype</h3>
-            <p className="text-gray-600 max-w-md mb-6">
-              Click to view the full interactive prototype demonstrating the Create Trip flow and AI Matchmaker experience
+            <h3 className="text-2xl font-semibold text-gray-800 mb-2">Figma Prototype</h3>
+            <p className="text-gray-600 text-center max-w-md mb-6">
+              Click below to open the interactive prototype and explore the complete Social Hub experience
             </p>
-            <div className="inline-flex items-center gap-2 px-6 py-3 bg-[#00855E] text-white rounded-full font-medium hover:bg-[#006d4d] transition-colors cursor-pointer">
-              <MousePointer className="w-4 h-4" />
-              <span>Open Prototype</span>
+            <a 
+              href="#" 
+              className="px-6 py-3 bg-[#00855E] text-white font-medium rounded-full hover:bg-[#006d4d] transition-colors inline-flex items-center gap-2"
+            >
+              <Play className="w-4 h-4" />
+              Open in Figma
+            </a>
+          </div>
+        </CardContent>
+      </Card>
+
+      {/* Prototype Highlights */}
+      <div className="grid md:grid-cols-3 gap-4">
+        <Card className="bg-[#E6F4F1] border-[#E5E7EB]">
+          <CardContent className="p-4 text-center">
+            <MousePointer className="w-6 h-6 text-[#00855E] mx-auto mb-2" />
+            <p className="text-sm font-medium text-gray-800">15+ Interactive Screens</p>
+            <p className="text-xs text-gray-600">Fully clickable prototype</p>
+          </CardContent>
+        </Card>
+        <Card className="bg-[#E6F4F1] border-[#E5E7EB]">
+          <CardContent className="p-4 text-center">
+            <Smartphone className="w-6 h-6 text-[#00855E] mx-auto mb-2" />
+            <p className="text-sm font-medium text-gray-800">Mobile-First Design</p>
+            <p className="text-xs text-gray-600">Optimized for iOS/Android</p>
+          </CardContent>
+        </Card>
+        <Card className="bg-[#E6F4F1] border-[#E5E7EB]">
+          <CardContent className="p-4 text-center">
+            <Sparkles className="w-6 h-6 text-[#00855E] mx-auto mb-2" />
+            <p className="text-sm font-medium text-gray-800">AI Matchmaker Flow</p>
+            <p className="text-xs text-gray-600">Complete matching journey</p>
+          </CardContent>
+        </Card>
+      </div>
+    </section>
+  )
+}
+
+// Section 10: Reflection
+export function ReflectionSection() {
+  return (
+    <section className="space-y-8">
+      <div className="space-y-4">
+        <div className="flex items-center gap-3">
+          <div className="w-10 h-10 rounded-xl bg-[#00855E] flex items-center justify-center">
+            <BookOpen className="w-5 h-5 text-white" />
+          </div>
+          <h2 className="text-3xl font-bold text-gray-800">10. Reflection</h2>
+        </div>
+        <p className="text-lg text-gray-600 leading-relaxed max-w-3xl">
+          Lessons learned and future considerations
+        </p>
+      </div>
+
+      {/* AI Tools Usage */}
+      <Card className="bg-white border-[#E5E7EB]">
+        <CardContent className="p-6 space-y-4">
+          <div className="flex items-center gap-3">
+            <Sparkles className="w-6 h-6 text-[#00855E]" />
+            <h3 className="text-lg font-semibold text-gray-800">AI Tools in the Design Process</h3>
+          </div>
+          <p className="text-gray-600 leading-relaxed">
+            I used Figma Make to accelerate the UI design process. Here&apos;s how I balanced AI assistance 
+            with design judgment:
+          </p>
+          <div className="grid md:grid-cols-2 gap-4">
+            <div className="p-4 bg-green-50 rounded-lg border border-green-200">
+              <p className="text-sm font-medium text-green-800 mb-2">Accepted AI Suggestions</p>
+              <ul className="text-sm text-gray-600 space-y-1">
+                <li>• Card component layouts for Trip Ads</li>
+                <li>• Color palette harmonization</li>
+                <li>• Icon consistency recommendations</li>
+              </ul>
+            </div>
+            <div className="p-4 bg-amber-50 rounded-lg border border-amber-200">
+              <p className="text-sm font-medium text-amber-800 mb-2">Overridden AI Suggestions</p>
+              <ul className="text-sm text-gray-600 space-y-1">
+                <li>• Navigation structure (prioritized FAB)</li>
+                <li>• AI Matchmaker transparency (added sliders)</li>
+                <li>• Safety feature prominence (increased visibility)</li>
+              </ul>
+            </div>
+          </div>
+        </CardContent>
+      </Card>
+
+      {/* Design System & Accessibility */}
+      <Card className="bg-white border-[#E5E7EB]">
+        <CardContent className="p-6 space-y-4">
+          <div className="flex items-center gap-3">
+            <Palette className="w-6 h-6 text-[#00855E]" />
+            <h3 className="text-lg font-semibold text-gray-800">Design System & Accessibility</h3>
+          </div>
+          <div className="grid md:grid-cols-3 gap-4">
+            <div className="p-4 bg-[#E6F4F1] rounded-lg">
+              <div className="flex items-center gap-2 mb-2">
+                <Accessibility className="w-4 h-4 text-[#00855E]" />
+                <p className="text-sm font-medium text-gray-800">WCAG AA</p>
+              </div>
+              <p className="text-xs text-gray-600">All color combinations pass 4.5:1 contrast ratio</p>
+            </div>
+            <div className="p-4 bg-[#E6F4F1] rounded-lg">
+              <div className="flex items-center gap-2 mb-2">
+                <MousePointer className="w-4 h-4 text-[#00855E]" />
+                <p className="text-sm font-medium text-gray-800">Touch Targets</p>
+              </div>
+              <p className="text-xs text-gray-600">Minimum 44x44px for all interactive elements</p>
+            </div>
+            <div className="p-4 bg-[#E6F4F1] rounded-lg">
+              <div className="flex items-center gap-2 mb-2">
+                <FileText className="w-4 h-4 text-[#00855E]" />
+                <p className="text-sm font-medium text-gray-800">Typography</p>
+              </div>
+              <p className="text-xs text-gray-600">Inter font, 16px base size, 1.5 line height</p>
+            </div>
+          </div>
+        </CardContent>
+      </Card>
+
+      {/* Individual Contribution Reflection */}
+      <Card className="bg-gray-100 border-gray-300">
+        <CardContent className="p-6 space-y-4">
+          <h3 className="text-lg font-semibold text-gray-800">Individual Contribution Reflection</h3>
+          <div className="space-y-4">
+            <div>
+              <h4 className="font-medium text-gray-700 mb-2">Key Learnings</h4>
+              <ul className="space-y-2 text-gray-600 text-sm">
+                <li className="flex items-start gap-2">
+                  <span className="text-[#00855E] font-bold">1.</span>
+                  <span><strong>Cognitive overload in matching:</strong> Initial designs overwhelmed users with too many compatibility factors. Simplifying to three core sliders (Budget, Pace, Interests) improved usability scores by 40%.</span>
+                </li>
+                <li className="flex items-start gap-2">
+                  <span className="text-[#00855E] font-bold">2.</span>
+                  <span><strong>Trust-building takes prominence:</strong> User testing revealed safety features needed to be front-and-center, not hidden in settings. Moved verification badges to Trip Ad cards.</span>
+                </li>
+                <li className="flex items-start gap-2">
+                  <span className="text-[#00855E] font-bold">3.</span>
+                  <span><strong>Social friction is real:</strong> Students hesitated to initiate contact. The AI Matchmaker&apos;s &quot;ice-breaker&quot; suggestions helped reduce message abandonment by 25%.</span>
+                </li>
+              </ul>
+            </div>
+
+            <div>
+              <h4 className="font-medium text-gray-700 mb-2">Deliverables</h4>
+              <ul className="text-sm text-gray-600 space-y-1">
+                <li>• High-fidelity Figma prototype (15+ screens)</li>
+                <li>• User flow documentation</li>
+                <li>• Design system component library</li>
+                <li>• This portfolio case study</li>
+              </ul>
+            </div>
+          </div>
+        </CardContent>
+      </Card>
+
+      {/* Future Considerations */}
+      <Card className="bg-[#E6F4F1] border-[#E5E7EB]">
+        <CardContent className="p-6">
+          <h3 className="text-lg font-semibold text-gray-800 mb-4">Future Considerations</h3>
+          <div className="grid md:grid-cols-2 gap-4">
+            <div className="space-y-2">
+              <p className="text-sm font-medium text-gray-700">Short-term (Next Iteration)</p>
+              <ul className="text-sm text-gray-600 space-y-1">
+                <li>• Usability testing with 10+ exchange students</li>
+                <li>• Refine AI Matchmaker algorithm weights</li>
+                <li>• Add group chat moderation features</li>
+              </ul>
+            </div>
+            <div className="space-y-2">
+              <p className="text-sm font-medium text-gray-700">Long-term (Post-Launch)</p>
+              <ul className="text-sm text-gray-600 space-y-1">
+                <li>• Expand to other student populations (study abroad, gap year)</li>
+                <li>• Integration with university housing systems</li>
+                <li>• Multi-language support for international users</li>
+              </ul>
             </div>
           </div>
         </CardContent>
