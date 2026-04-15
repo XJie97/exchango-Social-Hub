@@ -932,7 +932,7 @@ export function PrototypeSection() {
                 <iframe 
                   className="absolute top-0 left-0 w-full h-full rounded-lg"
                   style={{ border: "1px solid rgba(0, 0, 0, 0.1)" }}
-                  src="https://embed.figma.com/design/dmlyarHiQFkTmRkC2dtL4y/Untitled?node-id=1-2&embed-host=share" 
+                  src="https://exchango-deploy.vercel.app" 
                   allowFullScreen
                 />
               </div>
