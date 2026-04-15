@@ -925,30 +925,17 @@ export function PrototypeSection() {
       </div>
 
       <Card className="bg-white border-[#E5E7EB] overflow-hidden">
-        <CardContent className="p-0">
-          <div className="aspect-video bg-gradient-to-br from-[#E6F4F1] to-[#EEF8F5] flex flex-col items-center justify-center p-8">
-            <div className="w-20 h-20 rounded-2xl bg-[#00855E]/10 flex items-center justify-center mb-6">
-              <Play className="w-10 h-10 text-[#00855E]" />
-            </div>
-            <h3 className="text-xl font-semibold text-gray-800 mb-2">Figma Prototype</h3>
-            <p className="text-gray-600 text-center max-w-md mb-6">
-              Click below to interact with the full Social Hub prototype, including all user flows and micro-interactions.
-            </p>
-            <div className="flex flex-col sm:flex-row gap-4">
-              <a 
-                href="#" 
-                className="inline-flex items-center gap-2 px-6 py-3 bg-[#00855E] text-white rounded-full font-medium hover:bg-[#00855E]/90 transition-colors"
-              >
-                <Play className="w-4 h-4" />
-                Open Prototype
-              </a>
-              <a 
-                href="#" 
-                className="inline-flex items-center gap-2 px-6 py-3 bg-white text-[#00855E] border border-[#00855E] rounded-full font-medium hover:bg-[#E6F4F1] transition-colors"
-              >
-                <FileText className="w-4 h-4" />
-                View in Figma
-              </a>
+        <CardContent className="p-4 sm:p-6">
+          <div className="w-full flex justify-center">
+            <div className="w-full max-w-4xl">
+              <div className="relative w-full" style={{ paddingBottom: "56.25%" }}>
+                <iframe 
+                  className="absolute top-0 left-0 w-full h-full rounded-lg"
+                  style={{ border: "1px solid rgba(0, 0, 0, 0.1)" }}
+                  src="https://embed.figma.com/design/dmlyarHiQFkTmRkC2dtL4y/Untitled?node-id=1-2&embed-host=share" 
+                  allowFullScreen
+                />
+              </div>
             </div>
           </div>
         </CardContent>
