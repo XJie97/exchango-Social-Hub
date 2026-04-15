@@ -3,16 +3,11 @@
 import { useState, useEffect, useRef } from "react"
 import { PortfolioSidebar } from "@/components/portfolio-sidebar"
 import {
-  ProblemFramingSection,
-  UserResearchSection,
-  KeyUserTasksSection,
-  IterationSection,
-  UserFlowsSection,
-  AIFeatureSection,
-  DesignRationaleSection,
-  ServiceEcosystemSection,
-  PrototypeSection,
-  ReflectionSection,
+  ServiceOverviewSection,
+  DesignIterationSection,
+  EndToEndFlowSection,
+  EcosystemIntegrationSection,
+  AIReflectionSection,
 } from "@/components/portfolio-sections"
 import { Menu, X, ChevronDown } from "lucide-react"
 import { ExchangeIcon } from "@/components/exchange-icon"
