@@ -1,4 +1,4 @@
-import { Users, MapPin, Sparkles, Shield, Layers, Play, BookOpen, Target, RefreshCw, Smartphone, CheckCircle, ArrowRight, Lightbulb, SlidersHorizontal, Plus, MessageSquare, Instagram, Mail, Database, ArrowLeftRight, Palette, MousePointer, FileText } from "lucide-react"
+import { Users, MapPin, Sparkles, Shield, Layers, Play, BookOpen, Target, RefreshCw, Smartphone, CheckCircle, ArrowRight, Lightbulb, SlidersHorizontal, Plus, MessageSquare, Instagram, Mail, Database, ArrowLeftRight, Palette, MousePointer, FileText, GitBranch, Zap, AlertCircle } from "lucide-react"
 import { Card, CardContent } from "@/components/ui/card"
 
 // Section 1: Problem Framing
@@ -986,72 +986,102 @@ export function ReflectionSection() {
           <h2 className="text-3xl font-bold text-gray-800">10. Reflection</h2>
         </div>
         <p className="text-lg text-gray-600 leading-relaxed max-w-3xl">
-          Lessons learned on student travel vetting and AI-assisted design
+          The Role of AI in the Social Hub and lessons on prioritizing utility over novelty
         </p>
       </div>
 
-      <div className="grid md:grid-cols-2 gap-6">
+      {/* The Role of AI - Three Pillars */}
+      <Card className="bg-white border-[#E5E7EB]">
+        <CardContent className="p-6 space-y-4">
+          <h3 className="text-lg font-semibold text-gray-800">The Role of AI in the Social Hub</h3>
+          <p className="text-gray-600 leading-relaxed">
+            In designing the Social Hub, I categorized the AI&apos;s utility into three distinct pillars. While the technology 
+            handles the heavy lifting of data processing, I maintained a &quot;Human-in-the-Loop&quot; philosophy to ensure user safety and agency.
+          </p>
+        </CardContent>
+      </Card>
+
+      <div className="grid md:grid-cols-3 gap-6">
         <Card className="bg-white border-[#E5E7EB]">
           <CardContent className="p-6 space-y-4">
-            <h3 className="text-lg font-semibold text-gray-800">Key Takeaways</h3>
-            <ul className="space-y-3 text-gray-600">
-              <li className="flex items-start gap-3">
-                <div className="w-6 h-6 rounded-full bg-[#E6F4F1] flex items-center justify-center flex-shrink-0 mt-0.5">
-                  <span className="text-[#00855E] font-bold text-xs">1</span>
-                </div>
-                <span><strong>Cognitive Overload:</strong> Too many matching parameters overwhelm users. Three sliders (Budget, Pace, Interests) proved optimal.</span>
-              </li>
-              <li className="flex items-start gap-3">
-                <div className="w-6 h-6 rounded-full bg-[#E6F4F1] flex items-center justify-center flex-shrink-0 mt-0.5">
-                  <span className="text-[#00855E] font-bold text-xs">2</span>
-                </div>
-                <span><strong>Social Friction:</strong> Users hesitate to message strangers. Compatibility Reports reduce this friction by providing conversation starters.</span>
-              </li>
-              <li className="flex items-start gap-3">
-                <div className="w-6 h-6 rounded-full bg-[#E6F4F1] flex items-center justify-center flex-shrink-0 mt-0.5">
-                  <span className="text-[#00855E] font-bold text-xs">3</span>
-                </div>
-                <span><strong>Trust Layers:</strong> University verification alone isn&apos;t sufficient. Social links (Instagram) provide the &quot;final vetting step.&quot;</span>
-              </li>
-            </ul>
+            <div className="w-12 h-12 rounded-xl bg-[#E6F4F1] flex items-center justify-center">
+              <Sparkles className="w-6 h-6 text-[#00855E]" />
+            </div>
+            <h3 className="text-lg font-semibold text-gray-800">Personalization</h3>
+            <p className="text-sm text-[#00855E] font-medium">Suggesting</p>
+            <p className="text-gray-600 text-sm leading-relaxed">
+              This is the core of the AI Matchmaker. The system analyzes high-dimensional data—budget constraints, 
+              travel pace, and niche interests—to suggest compatible travel partners. It transforms a haystack of 
+              users into a curated shortlist, reducing the cognitive load of manual browsing.
+            </p>
           </CardContent>
         </Card>
 
         <Card className="bg-white border-[#E5E7EB]">
           <CardContent className="p-6 space-y-4">
-            <h3 className="text-lg font-semibold text-gray-800">Figma Make Decisions</h3>
-            <div className="space-y-3">
-              <div className="p-3 bg-green-50 rounded-lg border border-green-200">
-                <p className="text-sm font-medium text-green-800">Accepted</p>
-                <p className="text-sm text-green-700">Card-based layouts for trip listings — improved scannability</p>
-              </div>
-              <div className="p-3 bg-amber-50 rounded-lg border border-amber-200">
-                <p className="text-sm font-medium text-amber-800">Overridden</p>
-                <p className="text-sm text-amber-700">Navigation structure — AI suggested tabs, but bottom navigation tested better with users</p>
-              </div>
+            <div className="w-12 h-12 rounded-xl bg-[#E6F4F1] flex items-center justify-center">
+              <GitBranch className="w-6 h-6 text-[#00855E]" />
             </div>
+            <h3 className="text-lg font-semibold text-gray-800">Orchestration</h3>
+            <p className="text-sm text-[#00855E] font-medium">Coordinating</p>
+            <p className="text-gray-600 text-sm leading-relaxed">
+              The AI acts as an orchestrator by aligning the variables of a &quot;Created Trip&quot; with the profiles of 
+              potential &quot;Joiners.&quot; It ensures that the ecosystem remains coherent by surfacing the right opportunities 
+              to the right users at the right time.
+            </p>
+          </CardContent>
+        </Card>
+
+        <Card className="bg-white border-[#E5E7EB]">
+          <CardContent className="p-6 space-y-4">
+            <div className="w-12 h-12 rounded-xl bg-[#E6F4F1] flex items-center justify-center">
+              <Zap className="w-6 h-6 text-[#00855E]" />
+            </div>
+            <h3 className="text-lg font-semibold text-gray-800">Automation</h3>
+            <p className="text-sm text-[#00855E] font-medium">Acting</p>
+            <p className="text-gray-600 text-sm leading-relaxed">
+              Automation is applied to the generation of Compatibility Reports. Instead of users manually 
+              cross-referencing profiles, the AI automatically synthesizes a rationale for why two students 
+              are paired, presenting it as an actionable insight.
+            </p>
           </CardContent>
         </Card>
       </div>
 
-      {/* Individual Contribution Reflection */}
+      {/* Human Agency */}
+      <Card className="bg-[#E6F4F1] border-[#00855E]/20">
+        <CardContent className="p-6 space-y-4">
+          <div className="flex items-center gap-3">
+            <Shield className="w-6 h-6 text-[#00855E]" />
+            <h3 className="text-lg font-semibold text-gray-800">The Necessity of Human Agency</h3>
+          </div>
+          <p className="text-gray-700 leading-relaxed">
+            Despite these AI capabilities, human input remains the final gatekeeper. Travel involves physical safety, 
+            emotional compatibility, and nuanced logistical consent that an algorithm cannot fully quantify. I designed 
+            the interface so that <strong>AI proposes, but the human disposes</strong>. Users must manually &quot;Accept&quot; a match 
+            and &quot;Confirm&quot; trip details, ensuring the AI remains a supportive tool rather than an autonomous decision-maker.
+          </p>
+        </CardContent>
+      </Card>
+
+      {/* Critical Reflection - Milestone 2 */}
       <Card className="bg-gray-100 border-[#E5E7EB]">
         <CardContent className="p-6 space-y-4">
-          <h3 className="text-lg font-semibold text-gray-800">Individual Contribution Reflection</h3>
-          <p className="text-gray-600 leading-relaxed">
-            As the sole designer for the Social Hub service, I was responsible for all user research, wireframing, 
-            prototyping, and visual design. The most challenging aspect was balancing user safety concerns with 
-            a frictionless experience — too many verification steps would deter users, while too few would 
-            compromise trust. The solution of layered verification (email + optional social) emerged from 
-            iterative testing with 8 exchange students across 3 universities.
-          </p>
-          <div className="flex flex-wrap gap-2 pt-2">
-            <span className="px-3 py-1 bg-white rounded-full text-sm text-gray-600 border border-gray-200">User Research</span>
-            <span className="px-3 py-1 bg-white rounded-full text-sm text-gray-600 border border-gray-200">Wireframing</span>
-            <span className="px-3 py-1 bg-white rounded-full text-sm text-gray-600 border border-gray-200">Prototyping</span>
-            <span className="px-3 py-1 bg-white rounded-full text-sm text-gray-600 border border-gray-200">Visual Design</span>
-            <span className="px-3 py-1 bg-white rounded-full text-sm text-gray-600 border border-gray-200">User Testing</span>
+          <div className="flex items-center gap-3">
+            <AlertCircle className="w-6 h-6 text-amber-600" />
+            <h3 className="text-lg font-semibold text-gray-800">Critical Reflection: Lessons from Milestone 2</h3>
           </div>
+          <blockquote className="border-l-4 border-[#00855E] pl-4 py-2 italic text-gray-700 leading-relaxed">
+            &quot;My biggest challenge was incorporating the feedback regarding the missing &apos;Create Trip&apos; feature. I realized 
+            that during the early design phases, I had become over-indexed on the visual polish and technical promise of 
+            the AI Matchmaker, inadvertently ignoring the foundational functional requirements of a Social Hub.&quot;
+          </blockquote>
+          <p className="text-gray-600 leading-relaxed">
+            Rectifying this taught me a vital lesson in product design: <strong>An AI feature is only as valuable as 
+            the core service it supports.</strong> By pivoting to build a robust trip-creation flow, I ensured that the 
+            &quot;AI Personalization&quot; had a meaningful base of user-generated content to work with. This experience reinforced 
+            the importance of prioritizing <strong>&quot;Utility&quot; over &quot;Novelty&quot;</strong> in the design hierarchy.
+          </p>
         </CardContent>
       </Card>
 
@@ -1065,7 +1095,7 @@ export function ReflectionSection() {
               <p className="text-sm text-gray-600">Color contrast compliance</p>
             </div>
             <div className="p-4 bg-[#E6F4F1] rounded-lg text-center">
-              <p className="text-2xl font-bold text-[#00855E]">44×44px</p>
+              <p className="text-2xl font-bold text-[#00855E]">44x44px</p>
               <p className="text-sm text-gray-600">Minimum touch targets</p>
             </div>
             <div className="p-4 bg-[#E6F4F1] rounded-lg text-center">
