@@ -3,22 +3,32 @@
 import { useState, useEffect, useRef } from "react"
 import { PortfolioSidebar } from "@/components/portfolio-sidebar"
 import {
-  ServiceOverviewSection,
-  DesignIterationSection,
-  EndToEndFlowSection,
-  EcosystemIntegrationSection,
-  AIReflectionSection,
+  ProblemFramingSection,
+  UserResearchSection,
+  KeyUserTasksSection,
+  IterationSection,
+  UserFlowsSection,
+  AIFeatureSection,
+  DesignRationaleSection,
+  ServiceEcosystemSection,
+  PrototypeSection,
+  ReflectionSection,
 } from "@/components/portfolio-sections"
 import { Menu, X, ChevronDown } from "lucide-react"
 import { ExchangeIcon } from "@/components/exchange-icon"
 import { Button } from "@/components/ui/button"
 
 const sections = [
-  { id: 1, component: ServiceOverviewSection },
-  { id: 2, component: DesignIterationSection },
-  { id: 3, component: EndToEndFlowSection },
-  { id: 4, component: EcosystemIntegrationSection },
-  { id: 5, component: AIReflectionSection },
+  { id: 1, component: ProblemFramingSection },
+  { id: 2, component: UserResearchSection },
+  { id: 3, component: KeyUserTasksSection },
+  { id: 4, component: IterationSection },
+  { id: 5, component: UserFlowsSection },
+  { id: 6, component: AIFeatureSection },
+  { id: 7, component: DesignRationaleSection },
+  { id: 8, component: ServiceEcosystemSection },
+  { id: 9, component: PrototypeSection },
+  { id: 10, component: ReflectionSection },
 ]
 
 export default function PortfolioPage() {
@@ -117,11 +127,16 @@ export default function PortfolioPage() {
         <div className="lg:hidden fixed inset-0 z-40 bg-white pt-20">
           <nav className="px-6 py-4 space-y-2">
             {[
-              "Service Overview",
-              "Design Iteration",
-              "End-to-End Flow",
-              "Ecosystem Integration",
-              "AI Reflection",
+              "Problem Framing",
+              "User Research",
+              "Key User Tasks",
+              "Iteration & Evolution",
+              "User Flows & Wireframes",
+              "AI Feature: Matchmaker",
+              "Design Rationale",
+              "Service Ecosystem",
+              "Interactive Prototype",
+              "Reflection",
             ].map((item, index) => (
               <button
                 key={index}
