@@ -396,20 +396,12 @@ export function IterationSection() {
           </div>
           <Card className="bg-gray-100 border-[#E5E7EB] overflow-hidden">
             <CardContent className="p-0">
-              <div className="aspect-[4/3] bg-gradient-to-br from-gray-200 to-gray-100 flex items-center justify-center p-4 relative">
-                <div className="w-full max-w-xs space-y-3">
-                  <div className="h-6 bg-gray-300 rounded border-2 border-dashed border-gray-400"></div>
-                  <div className="grid grid-cols-2 gap-2">
-                    <div className="h-16 bg-gray-300 rounded border-2 border-dashed border-gray-400"></div>
-                    <div className="h-16 bg-gray-300 rounded border-2 border-dashed border-gray-400"></div>
-                  </div>
-                  <div className="h-4 bg-gray-300 rounded w-3/4 border-2 border-dashed border-gray-400"></div>
-                  <div className="h-8 bg-gray-300 rounded border-2 border-dashed border-gray-400"></div>
-                </div>
-                {/* Missing FAB indicator */}
-                <div className="absolute bottom-4 right-4 w-10 h-10 rounded-full border-2 border-dashed border-red-400 flex items-center justify-center">
-                  <span className="text-red-400 text-xs">?</span>
-                </div>
+              <div className="aspect-[9/19] bg-gray-50 flex items-center justify-center">
+                <img 
+                  src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/low-fi%20sketch%20%28before%29-gC0fJSsZQx3hdIeGbSh4pF8ut29pPq.png" 
+                  alt="Lo-Fi wireframe sketch showing Social Hub without Create Trip FAB"
+                  className="w-full h-full object-contain"
+                />
               </div>
             </CardContent>
           </Card>
@@ -426,33 +418,12 @@ export function IterationSection() {
           </div>
           <Card className="bg-white border-[#E5E7EB] overflow-hidden shadow-lg">
             <CardContent className="p-0">
-              <div className="aspect-[4/3] bg-gradient-to-br from-[#E6F4F1] to-[#EEF8F5] flex items-center justify-center p-4 relative">
-                <div className="w-full max-w-xs space-y-3">
-                  <div className="h-6 bg-[#00855E] rounded-lg flex items-center px-3">
-                    <div className="w-12 h-2 bg-white/30 rounded"></div>
-                  </div>
-                  <div className="grid grid-cols-2 gap-2">
-                    <div className="h-16 bg-white rounded-lg shadow-sm border border-[#E5E7EB] p-2">
-                      <div className="w-6 h-6 rounded-full bg-[#E6F4F1] mb-1"></div>
-                      <div className="h-1.5 bg-gray-200 rounded w-3/4"></div>
-                    </div>
-                    <div className="h-16 bg-white rounded-lg shadow-sm border border-[#E5E7EB] p-2">
-                      <div className="w-6 h-6 rounded-full bg-[#4a9d87]/30 mb-1"></div>
-                      <div className="h-1.5 bg-gray-200 rounded w-3/4"></div>
-                    </div>
-                  </div>
-                  <div className="h-4 bg-gray-200 rounded-lg w-3/4"></div>
-                  <div className="h-8 bg-[#00855E] rounded-lg"></div>
-                </div>
-                {/* FAB with hotspot */}
-                <div className="absolute bottom-4 right-4">
-                  <div className="w-12 h-12 rounded-full bg-[#00855E] shadow-lg flex items-center justify-center">
-                    <Plus className="w-6 h-6 text-white" />
-                  </div>
-                  <div className="absolute -top-1 -right-1 w-5 h-5 rounded-full bg-red-500 border-2 border-white flex items-center justify-center">
-                    <span className="text-white text-[10px] font-bold">!</span>
-                  </div>
-                </div>
+              <div className="aspect-[9/19] bg-gray-50 flex items-center justify-center">
+                <img 
+                  src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/hi-fi%20sketch%20%28after%29-x63EThfAstWqL23ysZBKdMNaRd8rgN.png" 
+                  alt="Hi-Fi design showing Social Hub with Create Trip FAB button"
+                  className="w-full h-full object-contain"
+                />
               </div>
             </CardContent>
           </Card>
