@@ -502,23 +502,27 @@ export function UserFlowsSection() {
           {/* Flow Steps with Screenshots */}
           <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
             {[
-              { step: "1", title: "Landing", desc: "User opens Social Hub", image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/TASK1_1.%20landing-1xgTwhsuzLBm7gmPYlNiaFVwagyAIM.png" },
-              { step: "2", title: "Tap FAB", desc: "Click '+' to create trip", image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/TASK1_2.%20tap%20FAB-hFRPa0HaQLpK8caL1Eil6w84eVAe6Q.png" },
-              { step: "3", title: "Fill Details", desc: "Destination, dates, budget", image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/TASK1_3.%20fill%20details-5A973QsC0IhaN3OM4llOH4F6T9WnEO.png" },
-              { step: "4", title: "Publish", desc: "Trip Ad goes live", image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/TASK1_4.%20publish-KsOF0YyFYssYuUwENkAi86PgHLPUYN.png" },
+              { step: "1", title: "Landing", desc: "User opens Social Hub", image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/TASK1_1.%20landing-1xgTwhsuzLBm7gmPYlNiaFVwagyAIM.png", showFABCircle: false },
+              { step: "2", title: "Tap FAB", desc: "Click '+' to create trip", image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/TASK1_2.%20tap%20FAB-hFRPa0HaQLpK8caL1Eil6w84eVAe6Q.png", showFABCircle: true },
+              { step: "3", title: "Fill Details", desc: "Destination, dates, budget", image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/TASK1_3.%20fill%20details-5A973QsC0IhaN3OM4llOH4F6T9WnEO.png", showFABCircle: false },
+              { step: "4", title: "Publish", desc: "Trip Ad goes live", image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/TASK1_4.%20publish-KsOF0YyFYssYuUwENkAi86PgHLPUYN.png", showFABCircle: false },
             ].map((item, index) => (
               <div key={index} className="text-center">
                 <Card className="bg-white border-[#E5E7EB] mb-2 overflow-hidden">
                   <CardContent className="p-0">
-                    <div className="aspect-[9/16] relative">
+                    <div className="aspect-[9/19] relative bg-gray-50">
                       <img 
                         src={item.image} 
                         alt={item.title}
-                        className="w-full h-full object-cover object-top"
+                        className="w-full h-full object-contain"
                       />
                       <div className="absolute top-2 left-2 w-7 h-7 rounded-full bg-[#00855E] text-white flex items-center justify-center font-bold text-sm shadow-md">
                         {item.step}
                       </div>
+                      {/* Red circle around FAB for step 2 */}
+                      {item.showFABCircle && (
+                        <div className="absolute bottom-[12%] right-[8%] w-12 h-12 rounded-full border-[3px] border-red-500 animate-pulse" />
+                      )}
                     </div>
                     <div className="p-3 border-t border-gray-100">
                       <p className="font-semibold text-gray-800 text-sm">{item.title}</p>
@@ -562,11 +566,11 @@ export function UserFlowsSection() {
               <div key={index} className="text-center">
                 <Card className="bg-white border-[#E5E7EB] mb-2 overflow-hidden">
                   <CardContent className="p-0">
-                    <div className="aspect-[9/16] relative">
+                    <div className="aspect-[9/19] relative bg-gray-50">
                       <img 
                         src={item.image} 
                         alt={item.title}
-                        className="w-full h-full object-cover object-top"
+                        className="w-full h-full object-contain"
                       />
                       <div className="absolute top-2 left-2 w-6 h-6 rounded-full bg-[#4a9d87] text-white flex items-center justify-center font-bold text-xs shadow-md">
                         {item.step}
@@ -598,11 +602,11 @@ export function UserFlowsSection() {
         ].map((screen, index) => (
           <Card key={index} className="bg-white border-[#E5E7EB] overflow-hidden">
             <CardContent className="p-0">
-              <div className="aspect-[9/16] relative">
+              <div className="aspect-[9/19] relative bg-gray-50">
                 <img 
                   src={screen.image} 
                   alt={screen.label}
-                  className="w-full h-full object-cover object-top"
+                  className="w-full h-full object-contain"
                 />
                 {/* Hotspot */}
                 <div className="absolute top-2 right-2 w-6 h-6 rounded-full bg-red-500 border-2 border-white flex items-center justify-center shadow-md">
