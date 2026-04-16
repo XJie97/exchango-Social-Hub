@@ -503,7 +503,7 @@ export function UserFlowsSection() {
           <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
             {[
               { step: "1", title: "Landing", desc: "User opens Social Hub", image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/TASK1_1.%20landing-1xgTwhsuzLBm7gmPYlNiaFVwagyAIM.png", showFABCircle: false },
-              { step: "2", title: "Tap FAB", desc: "Click '+' to create trip", image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/TASK1_2.%20tap%20FAB-hFRPa0HaQLpK8caL1Eil6w84eVAe6Q.png", showFABCircle: true },
+              { step: "2", title: "Tap FAB", desc: "Click '+' to create trip", image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/TASK1_2.%20tap%20FAB-KBoicQsblfyP6fE7dFY4tKxGMPqjcU.png", showFABCircle: false },
               { step: "3", title: "Fill Details", desc: "Destination, dates, budget", image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/TASK1_3.%20fill%20details-5A973QsC0IhaN3OM4llOH4F6T9WnEO.png", showFABCircle: false },
               { step: "4", title: "Publish", desc: "Trip Ad goes live", image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/TASK1_4.%20publish-KsOF0YyFYssYuUwENkAi86PgHLPUYN.png", showFABCircle: false },
             ].map((item, index) => (
