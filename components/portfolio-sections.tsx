@@ -499,27 +499,33 @@ export function UserFlowsSection() {
             </div>
           </div>
 
-          {/* Flow Steps */}
+          {/* Flow Steps with Screenshots */}
           <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
             {[
-              { step: "1", title: "Landing", desc: "User opens Social Hub" },
-              { step: "2", title: "Tap FAB", desc: "Click '+' to create trip" },
-              { step: "3", title: "Fill Details", desc: "Destination, dates, budget" },
-              { step: "4", title: "Publish", desc: "Trip Ad goes live" },
+              { step: "1", title: "Landing", desc: "User opens Social Hub", image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/TASK1_1.%20landing-1xgTwhsuzLBm7gmPYlNiaFVwagyAIM.png" },
+              { step: "2", title: "Tap FAB", desc: "Click '+' to create trip", image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/TASK1_2.%20tap%20FAB-hFRPa0HaQLpK8caL1Eil6w84eVAe6Q.png" },
+              { step: "3", title: "Fill Details", desc: "Destination, dates, budget", image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/TASK1_3.%20fill%20details-5A973QsC0IhaN3OM4llOH4F6T9WnEO.png" },
+              { step: "4", title: "Publish", desc: "Trip Ad goes live", image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/TASK1_4.%20publish-KsOF0YyFYssYuUwENkAi86PgHLPUYN.png" },
             ].map((item, index) => (
               <div key={index} className="text-center">
-                <Card className="bg-[#E6F4F1] border-[#E5E7EB] mb-2">
-                  <CardContent className="p-4">
-                    <div className="w-8 h-8 mx-auto rounded-full bg-[#00855E] text-white flex items-center justify-center font-bold text-sm mb-2">
-                      {item.step}
+                <Card className="bg-white border-[#E5E7EB] mb-2 overflow-hidden">
+                  <CardContent className="p-0">
+                    <div className="aspect-[9/16] relative">
+                      <img 
+                        src={item.image} 
+                        alt={item.title}
+                        className="w-full h-full object-cover object-top"
+                      />
+                      <div className="absolute top-2 left-2 w-7 h-7 rounded-full bg-[#00855E] text-white flex items-center justify-center font-bold text-sm shadow-md">
+                        {item.step}
+                      </div>
                     </div>
-                    <p className="font-semibold text-gray-800 text-sm">{item.title}</p>
+                    <div className="p-3 border-t border-gray-100">
+                      <p className="font-semibold text-gray-800 text-sm">{item.title}</p>
+                      <p className="text-xs text-gray-600 mt-1">{item.desc}</p>
+                    </div>
                   </CardContent>
                 </Card>
-                <p className="text-xs text-gray-600">{item.desc}</p>
-                {index < 3 && (
-                  <ArrowRight className="w-4 h-4 text-[#00855E] mx-auto mt-2 hidden md:block" />
-                )}
               </div>
             ))}
           </div>
@@ -544,25 +550,34 @@ export function UserFlowsSection() {
             </div>
           </div>
 
-          {/* Flow Steps */}
+          {/* Flow Steps with Screenshots */}
           <div className="grid grid-cols-2 md:grid-cols-5 gap-4">
             {[
-              { step: "1", title: "Browse", desc: "View trips" },
-              { step: "2", title: "AI Match", desc: "Open Matchmaker" },
-              { step: "3", title: "Customize", desc: "Set preferences" },
-              { step: "4", title: "Review", desc: "Compatibility Report" },
-              { step: "5", title: "Connect", desc: "Message users" },
+              { step: "1", title: "Browse", desc: "View trips", image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/TASK2_1.%20view%20trips-Ny8DSEorhzzawYGJahZMhFsQDbuA7X.png" },
+              { step: "2", title: "AI Match", desc: "Open Matchmaker", image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/TASK2_2.%20open%20matchmaker-CH1IyaRMaPSOaubT1N5qRCUbJaC5uY.png" },
+              { step: "3", title: "Customize", desc: "Set preferences", image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/TASK2_3.%20update%20preferences-1WnoJbXDqUo9DzHvV51R0arhU38Xaw.png" },
+              { step: "4", title: "Review", desc: "Compatibility Report", image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/TASK2_4.%20compatibility%20reports-0SFcc6pPDlPSj6Uttadlwq6H5XHw4v.png" },
+              { step: "5", title: "Connect", desc: "Message users", image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/TASK2_5.%20message%20users-WBOgxgCqAYzPFqIN5Z2SAigEluOvaD.png" },
             ].map((item, index) => (
               <div key={index} className="text-center">
-                <Card className="bg-[#E6F4F1] border-[#E5E7EB] mb-2">
-                  <CardContent className="p-3">
-                    <div className="w-7 h-7 mx-auto rounded-full bg-[#4a9d87] text-white flex items-center justify-center font-bold text-xs mb-2">
-                      {item.step}
+                <Card className="bg-white border-[#E5E7EB] mb-2 overflow-hidden">
+                  <CardContent className="p-0">
+                    <div className="aspect-[9/16] relative">
+                      <img 
+                        src={item.image} 
+                        alt={item.title}
+                        className="w-full h-full object-cover object-top"
+                      />
+                      <div className="absolute top-2 left-2 w-6 h-6 rounded-full bg-[#4a9d87] text-white flex items-center justify-center font-bold text-xs shadow-md">
+                        {item.step}
+                      </div>
                     </div>
-                    <p className="font-semibold text-gray-800 text-xs">{item.title}</p>
+                    <div className="p-2 border-t border-gray-100">
+                      <p className="font-semibold text-gray-800 text-xs">{item.title}</p>
+                      <p className="text-xs text-gray-600 mt-0.5">{item.desc}</p>
+                    </div>
                   </CardContent>
                 </Card>
-                <p className="text-xs text-gray-600">{item.desc}</p>
               </div>
             ))}
           </div>
@@ -572,32 +587,26 @@ export function UserFlowsSection() {
       {/* Mobile Wireframe Grid */}
       <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
         {[
-          { label: "Home Feed", hotspot: "1" },
-          { label: "Trip Detail", hotspot: "2" },
-          { label: "Create Trip", hotspot: "3" },
-          { label: "AI Matcher", hotspot: "4" },
-          { label: "Profile View", hotspot: "5" },
-          { label: "Chat", hotspot: "6" },
-          { label: "Settings", hotspot: "7" },
-          { label: "Notifications", hotspot: "8" },
+          { label: "Home Feed", hotspot: "1", image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/screen1_home%20feed-xhCrerlvXAOhRJtrz1cUz4CUA0Acd1.png" },
+          { label: "Trip Detail", hotspot: "2", image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/screen2_trip%20details-YwhBX09TL1JiCfAEZsBSUizizGlDsw.png" },
+          { label: "Create Trip", hotspot: "3", image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/screen3_create%20trip-8S0NvNZPe56rdS1nsCZI5SGIR0wTR9.png" },
+          { label: "AI Matcher", hotspot: "4", image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/screen4_AI%20matcher-gFrhn76akjvHYoO1w6VhlPjWpo1rWg.png" },
+          { label: "Profile View", hotspot: "5", image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/screen5_profile%20view-7sRSm2Xs3B5a4GKsjElU6pkJooJSnV.png" },
+          { label: "Chat", hotspot: "6", image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/screen6_chat-ZtLOBDzFBRhgWToeTIQR7nehxmnAoS.png" },
+          { label: "Settings", hotspot: "7", image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/screen7_settings-VPvppgYQkLFlyzCnD191buokVtPYuo.png" },
+          { label: "Notifications", hotspot: "8", image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/screen8_notifications-IYEsb3d63Yedbuhd2BkVGgfDe7bhOh.png" },
         ].map((screen, index) => (
           <Card key={index} className="bg-white border-[#E5E7EB] overflow-hidden">
             <CardContent className="p-0">
-              <div className="aspect-[9/16] bg-gradient-to-br from-gray-100 to-gray-50 relative p-3">
-                {/* Phone frame */}
-                <div className="w-full h-full rounded-lg border border-gray-200 bg-white p-2 space-y-2">
-                  <div className="h-3 bg-gray-200 rounded w-1/2 mx-auto"></div>
-                  <div className="h-8 bg-[#E6F4F1] rounded"></div>
-                  <div className="space-y-1">
-                    <div className="h-2 bg-gray-100 rounded w-3/4"></div>
-                    <div className="h-2 bg-gray-100 rounded w-1/2"></div>
-                  </div>
-                  <div className="h-12 bg-gray-50 rounded border border-gray-100"></div>
-                  <div className="h-12 bg-gray-50 rounded border border-gray-100"></div>
-                </div>
+              <div className="aspect-[9/16] relative">
+                <img 
+                  src={screen.image} 
+                  alt={screen.label}
+                  className="w-full h-full object-cover object-top"
+                />
                 {/* Hotspot */}
-                <div className="absolute top-2 right-2 w-5 h-5 rounded-full bg-red-500 border-2 border-white flex items-center justify-center">
-                  <span className="text-white text-[10px] font-bold">{screen.hotspot}</span>
+                <div className="absolute top-2 right-2 w-6 h-6 rounded-full bg-red-500 border-2 border-white flex items-center justify-center shadow-md">
+                  <span className="text-white text-xs font-bold">{screen.hotspot}</span>
                 </div>
               </div>
               <div className="p-2 text-center border-t border-gray-100">
