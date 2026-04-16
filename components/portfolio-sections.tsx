@@ -521,7 +521,7 @@ export function UserFlowsSection() {
                       </div>
                       {/* Red circle around FAB for step 2 */}
                       {item.showFABCircle && (
-                        <div className="absolute bottom-[12%] right-[8%] w-12 h-12 rounded-full border-[3px] border-red-500 animate-pulse" />
+                        <div className="absolute bottom-[16%] right-[12%] w-10 h-10 rounded-full border-[3px] border-red-500 animate-pulse" />
                       )}
                     </div>
                     <div className="p-3 border-t border-gray-100">
